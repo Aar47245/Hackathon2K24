@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spotify - Your favourite music is here</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Spotify Logo"> Spotify</li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search for songs...">
+        <button id="searchBtn">Search</button>
+    </div>
+
+    <!-- Song List Container -->
+    <div class="container">
+        <div class="songList">
+            <h1>Best of MUSICS - No Copyright Sounds</h1>
+            <div class="songItemContainer">
+                <!-- Sample Song Item with Unique Images -->
+                <div class="songItem">
+                    <img src="song1.jpg" alt="Song 1">
+                    <span class="songName">Let Me Love You</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">03:15 
+                            <i id="0" class="far songItemPlay fa-play-circle"></i>
+                        </span>
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img src="song2.jpg" alt="Song 2">
+                    <span class="songName">Closer</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">04:00 
+                            <i id="1" class="far songItemPlay fa-play-circle"></i>
+                        </span>
+                    </span>
+                </div>
+                <!-- Add more songs here -->
+                <div class="songItem">
+                    <img src="song3.jpg" alt="Song 3">
+                    <span class="songName">Faded</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">03:43 
+                            <i id="2" class="far songItemPlay fa-play-circle"></i>
+                        </span>
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img src="song4.jpg" alt="Song 4">
+                    <span class="songName">Shape of You</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">04:30 
+                            <i id="3" class="far songItemPlay fa-play-circle"></i>
+                        </span>
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img src="song5.jpg" alt="Song 5">
+                    <span class="songName">Jaani</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">05:00 
+                            <i id="1" class="far songItemPlay fa-play-circle"></i>
+                        </span>
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img src="song6.jpg" alt="Song 6">
+                    <span class="songName">Ajmal</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">03:59 
+                            <i id="1" class="far songItemPlay fa-play-circle"></i>
+                        </span>
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img src="song7.jpg" alt="Song 7">
+                    <span class="songName">Raj</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">04:59 
+                            <i id="1" class="far songItemPlay fa-play-circle"></i>
+                        </span>
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img src="song8.jpg" alt="Song 8">
+                    <span class="songName">Alaska</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">04:40 
+                            <i id="1" class="far songItemPlay fa-play-circle"></i>
+                        </span>
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img src="song9.jpg" alt="Song 9">
+                    <span class="songName">gamer</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">05:09 
+                            <i id="1" class="far songItemPlay fa-play-circle"></i>
+                        </span>
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img src="song10.jpg" alt="Song 10">
+                    <span class="songName">Asist</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">04:39 
+                            <i id="1" class="far songItemPlay fa-play-circle"></i>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Player with Volume Control -->
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <!-- FontAwesome Icons for Player Controls -->
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i> 
+            <i class="fas fa-volume-up fa-3x" id="volumeControl"></i>
+            <i class="fas fa-volume-mute fa-3x" id="muteControl"></i>
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" width="42px" alt="" id="gif"> 
+            <span id="masterSongName">Warriyo - Mortals [NCS Release]</span>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Spotify Clone by Ajmal & Raj - All Rights Reserved</p>
+    </footer>
+
+    <!-- External JS -->
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+</body>
+</html>
